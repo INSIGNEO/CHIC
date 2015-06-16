@@ -1,0 +1,607 @@
+<ROA>
+  <Resource mandatory="true" resourceid="0" type="tag">
+    <SchemaURI mandatory="true" multiplicity="1" type="uri">
+    </SchemaURI>
+    
+    <SchemaVersion mandatory="true" multiplicity="1" type="date">
+    </SchemaVersion>
+    
+    <CommonMetadata mandatory="true" multiplicity="1" type="tag">
+      
+      <GlobalID mandatory="true" multiplicity="1" type="URI">
+      </GlobalID>
+      
+      <LocalID mandatory="true" multiplicity="1" type="string">
+      </LocalID>
+      
+      <Name mandatory="true" multiplicity="1" type="string">
+      </Name>
+      
+      <Type mandatory="true" multiplicity="1" type="list">
+      </Type>
+      
+      <Description mandatory="true" multiplicity="1" type="string">
+      </Description>
+      
+      <Tags mandatory="false" multiplicity="1" type="list">
+      </Tags>
+      
+      <Author mandatory="true" multiplicity="1" type="string">
+      </Author>
+      
+      <Publicity mandatory="true" multiplicity="1" type="bool">
+      </Publicity>
+      
+      <SemanticRepresentation mandatory="true" multiplicity="n" type="tag">
+        <OntologyURI mandatory="false" multiplicity="n" type="URI">
+        </OntologyURI>
+        
+        <SemanticConcepts mandatory="false" multiplicity="n" type="tag">
+        </SemanticConcepts>
+      </SemanticRepresentation>
+      
+      <Quality mandatory="true" multiplicity="1" type="tag">
+        <Rating mandatory="false" multiplicity="1" type="float">
+        </Rating>
+        
+        <Views mandatory="false" multiplicity="1" type="int">
+        </Views>
+      </Quality>
+      
+      <Documentation mandatory="true" multiplicity="1" type="tag">
+        
+        <LicenseType mandatory="true" multiplicity="1" type="list">
+        </LicenseType>
+        
+        <LicenceURL mandatory="true" multiplicity="1" type="URI">
+        </LicenceURL>
+        
+        <References mandatory="true" multiplicity="1" type="string">
+        </References>
+      </Documentation>
+      
+      <Traceability mandatory="true" multiplicity="1" type="tag">
+        
+        <Event mandatory="true" multiplicity="1" type="list">
+        </Event>
+        
+        <EventDate mandatory="true" multiplicity="1" type="date">
+        </EventDate>
+        
+        <OperatorID mandatory="true" multiplicity="1" type="string">
+        </OperatorID>
+        
+        <Parameters mandatory="false" multiplicity="n" type="string">
+        </Parameters>
+      </Traceability>
+      
+      <PrimaryCharacterisation mandatory="true" multiplicity="1" type="tag">
+        <Perspective1 mandatory="true" multiplicity="1" type="string">
+        </Perspective1>
+        
+        <Perspective2 mandatory="true" multiplicity="1" type="string">
+        </Perspective2>
+        
+        <Perspective3 mandatory="true" multiplicity="1" type="string">
+        </Perspective3>
+        
+        <Perspective4 mandatory="true" multiplicity="1" type="string">
+        </Perspective4>
+        
+        <Perspective5 mandatory="true" multiplicity="1" type="string">
+        </Perspective5>
+        
+        <Perspective6 mandatory="true" multiplicity="1" type="string">
+        </Perspective6>
+      </PrimaryCharacterisation>
+      
+      <SecondaryCharacterisation mandatory="true" multiplicity="n" type="tag">
+        <Perspective7 mandatory="true" multiplicity="1" type="string">
+        </Perspective7>
+        
+        <Perspective8 mandatory="true" multiplicity="1" type="string">
+        </Perspective8>
+        
+        <Perspective9 mandatory="true" multiplicity="1" type="string">
+        </Perspective9>
+        
+        <Perspective10 mandatory="true" multiplicity="1" type="string">
+        </Perspective10>
+        
+        <Perspective11 mandatory="true" multiplicity="1" type="string">
+        </Perspective11>
+        
+        <Perspective12 mandatory="true" multiplicity="1" type="string">
+        </Perspective12>
+        
+        <Perspective13 mandatory="true" multiplicity="1" type="string">
+        </Perspective13>
+        
+      </SecondaryCharacterisation>
+      
+    </CommonMetadata>
+    
+    <SpecificMetadata mandatory="true" multiplicity="1" type="tag">
+      
+      <Hypomodel mandatory="true" multiplicity="1" type="tag">
+        
+        <Inputs mandatory="true" multiplicity="n" type="string">
+        </Inputs>
+        
+        <Outputs mandatory="true" multiplicity="n" type="string">
+        </Outputs>
+        
+        <ModelType mandatory="true" multiplicity="1" type="tag">
+          
+          <Static mandatory="true" multiplicity="1" type="tag">
+            <ProtocolType mandatory="true" multiplicity="1" type="list">
+            </ProtocolType>
+            
+            <EndPoint mandatory="true" multiplicity="1" type="URI">
+            </EndPoint>
+          </Static>
+          
+          <Migrating mandatory="true" multiplicity="1" type="tag">
+            <TargetURI mandatory="true" multiplicity="1" type="URI">
+            </TargetURI>
+            
+            <TargetPort mandatory="true" multiplicity="1" type="int">
+            </TargetPort>
+            
+            <TransportProtocol mandatory="true" multiplicity="1" type="bool">
+            </TransportProtocol>
+            
+            <ApplicationProtocol mandatory="true" multiplicity="1" type="list">
+            </ApplicationProtocol>
+          </Migrating>
+          
+          <Configurable mandatory="true" multiplicity="1" type="tag">
+            
+            <OS mandatory="true" multiplicity="n" type="list">
+            </OS>
+            
+            <Environment mandatory="true" multiplicity="1" type="list">
+            </Environment>
+            
+            <DependingLibraries mandatory="true" multiplicity="n" type="string">
+            </DependingLibraries>
+            
+            <BinaryURI mandatory="true" multiplicity="n" type="URI">
+            </BinaryURI>
+            
+          </Configurable>
+          
+        </ModelType>
+      </Hypomodel>
+      
+      <Dataset mandatory="true" multiplicity="1" type="tag">
+        
+        <StorageURI mandatory="true" multiplicity="1" type="URI">
+        </StorageURI>
+        
+        <FileSize mandatory="true" multiplicity="1" type="int">
+        </FileSize>
+        
+        <FileCheckSum mandatory="true" multiplicity="1" type="string">
+        </FileCheckSum>
+        
+        <FileFormat mandatory="true" multiplicity="1" type="list">
+        </FileFormat>
+        
+        <FileType mandatory="true" multiplicity="1" type="bool">
+        </FileType>
+        
+        <Endianity mandatory="true" multiplicity="1" type="bool">
+        </Endianity>
+        
+        <Encryption mandatory="true" multiplicity="1" type="bool">
+        </Encryption>
+      </Dataset>
+      
+      <Hypermodel mandatory="true" multiplicity="1" type="tag">
+        <inputs mandatory="true" multiplicity="n" type="string">
+        </inputs>
+        
+        <outputs mandatory="true" multiplicity="n" type="string">
+        </outputs>
+        
+        <URI mandatory="true" multiplicity="1" type="URI">
+        </URI>
+      </Hypermodel>
+      
+    </SpecificMetadata>
+    
+  </Resource>
+
+    
+    
+   
+    <Resource mandatory="true" resourceid="1" type="tag">
+        <SchemaURI mandatory="true" multiplicity="1" type="uri">
+        </SchemaURI>
+        
+        <SchemaVersion mandatory="true" multiplicity="1" type="date">
+        </SchemaVersion>
+ 
+        <CommonMetadata mandatory="true" multiplicity="1" type="tag">
+          
+          <GlobalID mandatory="true" multiplicity="1" type="URI">
+            http://cse.insigneo.org:8090/chic/resource/1
+          </GlobalID>
+        
+          <LocalID mandatory="true" multiplicity="1" type="string">
+          1
+          </LocalID>
+        
+          <Name mandatory="true" multiplicity="1" type="string">
+            WNT_Bcatenin_model
+          </Name>
+
+          <Type mandatory="true" multiplicity="1" type="list">
+            Hypomodel
+          </Type>
+        
+          <Description mandatory="true" multiplicity="1" type="string">
+            Matlab based implementation of the ODE model
+            http://www.ncbi.nlm.nih.gov/pubmed/17382967
+          </Description>
+        
+          <Tags mandatory="false" multiplicity="1" type="list">daniele</Tags>
+
+          <Author mandatory="true" multiplicity="1" type="string">
+            D C Walker
+          </Author>
+  
+          <Publicity mandatory="true" multiplicity="1" type="bool">
+            public
+          </Publicity>
+
+          <SemanticRepresentation mandatory="true" multiplicity="n" type="tag">
+            <OntologyURI mandatory="false" multiplicity="n" type="URI">
+            </OntologyURI>
+
+            <SemanticConcepts mandatory="false" multiplicity="n" type="tag">
+            </SemanticConcepts>
+          </SemanticRepresentation>
+          
+          <Quality mandatory="true" multiplicity="1" type="tag">
+            <Rating mandatory="false" multiplicity="1" type="float">
+            </Rating>
+          
+            <Views mandatory="false" multiplicity="1" type="int">
+            </Views>
+          </Quality>
+
+          <Documentation mandatory="true" multiplicity="1" type="tag">
+
+            <LicenseType mandatory="true" multiplicity="1" type="list">
+            EDU
+            </LicenseType>
+
+            <LicenceURL mandatory="true" multiplicity="1" type="URI">
+              http://cse.insigneo.org:8090/license/EDU
+            </LicenceURL>
+          
+            <References mandatory="true" multiplicity="1" type="string">
+              http://www.ncbi.nlm.nih.gov/pubmed/17382967
+            </References>
+          </Documentation>
+
+          <Traceability mandatory="true" multiplicity="1" type="tag">
+          
+            <Event mandatory="true" multiplicity="1" type="list">
+              create
+            </Event>
+          
+            <EventDate mandatory="true" multiplicity="1" type="date">
+              28-Jan-2014
+            </EventDate>
+          
+            <OperatorID mandatory="true" multiplicity="1" type="string">
+              D C Walker
+            </OperatorID>
+          
+            <Parameters mandatory="false" multiplicity="n" type="string">
+            </Parameters>
+          </Traceability>
+     
+          <PrimaryCharacterisation mandatory="true" multiplicity="1" type="tag">
+                <Perspective1 mandatory="true" multiplicity="1" type="string">
+                  normal, tumor
+                </Perspective1>
+
+                <Perspective2 mandatory="true" multiplicity="1" type="string">
+                  protein
+                </Perspective2>
+                
+                <Perspective3 mandatory="true" multiplicity="1" type="string">
+                  sec
+                </Perspective3>
+                
+                <Perspective4 mandatory="true" multiplicity="1" type="string">
+                  cell cycling, cell adhesion
+                </Perspective4>
+                
+                <Perspective5 mandatory="true" multiplicity="1" type="string">
+                  colon
+                </Perspective5>
+                
+                <Perspective6 mandatory="true" multiplicity="1" type="string">
+                  none
+                </Perspective6>
+          </PrimaryCharacterisation>
+          
+          <SecondaryCharacterisation mandatory="true" multiplicity="n" type="tag">
+            <Perspective7 mandatory="true" multiplicity="1" type="string">
+              generic
+            </Perspective7>
+            
+            <Perspective8 mandatory="true" multiplicity="1" type="string">
+              bottom-up
+            </Perspective8>
+            
+            <Perspective9 mandatory="true" multiplicity="1" type="string">
+              short-long
+            </Perspective9>
+            
+            <Perspective10 mandatory="true" multiplicity="1" type="string">
+              mechanistic
+            </Perspective10>
+            
+            <Perspective11 mandatory="true" multiplicity="1" type="string">
+              deterministic
+            </Perspective11>
+            
+            <Perspective12 mandatory="true" multiplicity="1" type="string">
+              finitised continuos
+            </Perspective12>
+            
+            <Perspective13 mandatory="true" multiplicity="1" type="string">
+              algorithm
+            </Perspective13>
+            
+          </SecondaryCharacterisation>
+          
+        </CommonMetadata>
+        
+        <SpecificMetadata mandatory="true" multiplicity="1" type="tag">
+          
+          <Hypomodel mandatory="true" multiplicity="1" type="tag">
+     
+            <Inputs mandatory="true" multiplicity="n" type="string">
+              inital Wnt ligand concentration (scalar); 1 x 2 vector specifying start and end times for solution
+            </Inputs>
+
+            <Outputs mandatory="true" multiplicity="n" type="string">
+              array containing time points numerical solution and 2dimensional array containing the concentrations of all proteins components
+            </Outputs>
+            
+            <ModelType mandatory="true" multiplicity="1" type="tag">
+
+                  <Static mandatory="true" multiplicity="1" type="tag">
+                    <ProtocolType mandatory="true" multiplicity="1" type="list">
+                    </ProtocolType>
+                    
+                    <EndPoint mandatory="true" multiplicity="1" type="URI">
+                    </EndPoint>
+                  </Static>
+                  
+                  <Migrating mandatory="true" multiplicity="1" type="tag">
+                    <TargetURI mandatory="true" multiplicity="1" type="URI">
+                    </TargetURI>
+                    
+                    <TargetPort mandatory="true" multiplicity="1" type="int">
+                    </TargetPort>
+                    
+                    <TransportProtocol mandatory="true" multiplicity="1" type="bool">
+                    </TransportProtocol>
+                    
+                    <ApplicationProtocol mandatory="true" multiplicity="1" type="list">
+                    </ApplicationProtocol>
+                  </Migrating>
+
+                  <Configurable mandatory="true" multiplicity="1" type="tag">
+
+                    <OS mandatory="true" multiplicity="n" type="list">
+                      win, mac, linux
+                    </OS>
+
+                    <Environment mandatory="true" multiplicity="1" type="list">
+                      Matlab
+                    </Environment>
+
+                    <DependingLibraries mandatory="true" multiplicity="n" type="string">
+                      Matlab
+                    </DependingLibraries>
+
+                    <BinaryURI mandatory="true" multiplicity="n" type="URI">
+                      http://cse.insigneo.org/chic/exec/walker-byrne-000000001
+                    </BinaryURI>
+
+                   </Configurable>
+
+            </ModelType>
+          </Hypomodel>
+          
+          <Dataset mandatory="true" multiplicity="1" type="tag">
+            
+            <StorageURI mandatory="true" multiplicity="1" type="URI">
+              http://cse.insigneo.org/chic/data/walker-byrne-000000001
+            </StorageURI>
+            
+            <FileSize mandatory="true" multiplicity="1" type="int">
+              100KB
+            </FileSize>
+            
+            <FileCheckSum mandatory="true" multiplicity="1" type="string">
+              FAKE_Checksum1234567890
+            </FileCheckSum>
+            
+            <FileFormat mandatory="true" multiplicity="1" type="list">
+              CSV
+            </FileFormat>
+            
+            <FileType mandatory="true" multiplicity="1" type="bool">
+              ascii
+            </FileType>
+
+            <Endianity mandatory="true" multiplicity="1" type="bool">
+              big
+            </Endianity>
+            
+            <Encryption mandatory="true" multiplicity="1" type="bool">
+              no
+            </Encryption>
+          </Dataset>
+
+          <Hypermodel mandatory="true" multiplicity="1" type="tag">
+            <inputs mandatory="true" multiplicity="n" type="string">
+            </inputs>
+            
+            <outputs mandatory="true" multiplicity="n" type="string">
+            </outputs>
+            
+            <URI mandatory="true" multiplicity="1" type="URI">
+            </URI>
+          </Hypermodel>
+
+        </SpecificMetadata>
+
+    </Resource>
+    
+    
+    
+    
+    
+    
+    <Resource mandatory="true" resourceid="2" type="tag">
+      <SchemaURI mandatory="true" multiplicity="1" type="uri">
+      </SchemaURI>
+      
+      <SchemaVersion mandatory="true" multiplicity="1" type="date">
+      </SchemaVersion>
+      
+      <CommonMetadata mandatory="true" multiplicity="1" type="tag">
+        
+        <GlobalID mandatory="true" multiplicity="1" type="URI">
+          http://cse.insigneo.org:8090/chic/resource/2
+        </GlobalID>
+        
+        <LocalID mandatory="true" multiplicity="1" type="string">
+          2
+        </LocalID>
+        
+        <Name mandatory="true" multiplicity="1" type="string">
+          WNT_Bcatenin_model
+        </Name>
+        
+        <Type mandatory="true" multiplicity="1" type="list">
+          Dataset
+        </Type>
+        
+        <Description mandatory="true" multiplicity="1" type="string">
+          Dataset required as input to execute the Matlab based implementation of the ODE model
+          http://www.ncbi.nlm.nih.gov/pubmed/17382967
+        </Description>
+        
+        <Tags mandatory="false" multiplicity="1" type="list">aaa</Tags>
+        
+        <Author mandatory="true" multiplicity="1" type="string">
+          D C Walker
+        </Author>
+        
+        <Publicity mandatory="true" multiplicity="1" type="bool">
+          public
+        </Publicity>
+        
+        <SemanticRepresentation mandatory="true" multiplicity="n" type="tag">
+          <OntologyURI mandatory="false" multiplicity="n" type="URI">
+          </OntologyURI>
+          
+          <SemanticConcepts mandatory="false" multiplicity="n" type="tag">
+          </SemanticConcepts>
+        </SemanticRepresentation>
+        
+        <Quality mandatory="true" multiplicity="1" type="tag">
+          <Rating mandatory="false" multiplicity="1" type="float">
+          </Rating>
+          
+          <Views mandatory="false" multiplicity="1" type="int">
+          </Views>
+        </Quality>
+        
+        <Documentation mandatory="true" multiplicity="1" type="tag">
+          
+          <LicenseType mandatory="true" multiplicity="1" type="list">
+            EDU
+          </LicenseType>
+          
+          <LicenceURL mandatory="true" multiplicity="1" type="URI">
+            http://cse.insigneo.org:8081/license/EDU
+          </LicenceURL>
+          
+          <References mandatory="true" multiplicity="1" type="string">
+            http://www.ncbi.nlm.nih.gov/pubmed/17382967
+          </References>
+        </Documentation>
+        
+        <Traceability mandatory="true" multiplicity="1" type="tag">
+          
+          <Event mandatory="true" multiplicity="1" type="list">
+            create
+          </Event>
+          
+          <EventDate mandatory="true" multiplicity="1" type="date">
+            28-Jan-2014
+          </EventDate>
+          
+          <OperatorID mandatory="true" multiplicity="1" type="string">
+            D C Walker
+          </OperatorID>
+          
+          <Parameters mandatory="false" multiplicity="n" type="string">
+          </Parameters>
+        </Traceability>
+        
+      </CommonMetadata>
+      
+      <SpecificMetadata mandatory="true" multiplicity="1" type="tag">
+        
+        
+        <Dataset mandatory="true" multiplicity="1" type="tag">
+          
+          <StorageURI mandatory="true" multiplicity="1" type="URI">
+            http://cse.insigneo.org:8090/chic/data/walker-byrne-000000001
+          </StorageURI>
+          
+          <FileSize mandatory="true" multiplicity="1" type="int">
+            100KB
+          </FileSize>
+          
+          <FileCheckSum mandatory="true" multiplicity="1" type="string">
+            FAKE_Checksum1234567890
+          </FileCheckSum>
+          
+          <FileFormat mandatory="true" multiplicity="1" type="list">
+            CSV
+          </FileFormat>
+          
+          <FileType mandatory="true" multiplicity="1" type="bool">
+            ascii
+          </FileType>
+          
+          <Endianity mandatory="true" multiplicity="1" type="bool">
+            big
+          </Endianity>
+          
+          <Encryption mandatory="true" multiplicity="1" type="bool">
+            no
+          </Encryption>
+        </Dataset>
+        
+        
+      </SpecificMetadata>
+      
+    </Resource>
+
+</ROA>

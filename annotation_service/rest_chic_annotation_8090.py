@@ -4,7 +4,7 @@ import xml.etree.ElementTree as ET
 
 from time import gmtime, strftime
 
-resource_file = 'Dawn_model_resource_8091.xml'
+resource_file = 'Dawn_model_resource_8090.xml'
 tree = ET.parse(resource_file)
 root = tree.getroot()
 
@@ -77,7 +77,7 @@ class get_resource_id_metadata_by_name:
   def GET(self, resource_id, metadata_name):
     web.header('Content-Type', 'text/xml');
     print('get_resource_id_metadata_by_name');
-    print("getting resourceID="+str(resource_id)+" metadata="+str(metadata_name)+'content_type='+str(http_content_type))
+    print("getting resourceID="+str(resource_id)+" metadata="+str(metadata_name)+'content_type='+str(http_content_type));
     for child in root:
       if child.attrib['resourceid'] == str(resource_id):
         resource = child;
@@ -114,7 +114,7 @@ class get_resource_id_metadata_by_name:
             xml_element =xml_element_specific;
           
           
-          print('output='+str(output))
+          print('output='+str(output));
           
           if http_content_type != 'xml':
             output == xml_element.text;
@@ -138,7 +138,7 @@ class get_resource_id_metadata_by_name:
 # Return metadata by name from common metadata
 class get_resource_id_specific_metadata_by_name:
   def GET(self, resource_id, metadata_name):
-    print('get_resource_id_specific_metadata_by_name');
+    print('get_resource_id_specific_metadata_by_name')
     print("getting resourceID="+str(resource_id)+" metadata="+str(metadata_name)+'content_type='+str(http_content_type))
     for child in root:
       if child.attrib['resourceid'] == str(resource_id):
@@ -162,7 +162,7 @@ class get_resource_id_specific_metadata_by_name:
         elif resource_type == resource_dataset:
             print("switch case\n"+resource_dataset) ;
 
-        print('resource_type='+resource_type);
+        print('resource_type='+resource_type)
 
         try:
           xml_element = resource_specific_metadata.find(metadata_name);
@@ -170,7 +170,7 @@ class get_resource_id_specific_metadata_by_name:
           print('output='+str(output))
 
           if http_content_type != 'xml':
-            output == xml_element.text;
+            output == xml_element.text
 
             #description = common_meta_data.find('Description');
             #output = ET.tostring(description, 'utf-8', method='xml')

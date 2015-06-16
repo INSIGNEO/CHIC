@@ -4,7 +4,7 @@ import xml.etree.ElementTree as ET
 
 from time import gmtime, strftime
 
-resource_file = 'Dawn_model_resource_8091.xml'
+resource_file = 'Dawn_model_resource_80.xml'
 tree = ET.parse(resource_file)
 root = tree.getroot()
 
@@ -43,8 +43,6 @@ app = web.application(urls, globals())
 
 
 
-
-
 class add_resource_id_tags:
   def PUT(self, resource_id):
     print('add_resource_id_tags, resource_id='+str(resource_id));
@@ -53,31 +51,27 @@ class add_resource_id_tags:
     for child in root:
       if child.attrib['resourceid'] == str(resource_id):
           common_metadata  = child.find('CommonMetadata');
-          old_tags  = common_metadata.find('Tags');
-          try:    
+          try:
+            old_tags  = common_metadata.find('Tags');
+
             new_tags  = str(web.data());
-            # test = "<test>pippo</test>";
-            # old_tags.text = ET.fromstring(test);
-            
-            common_metadata.find('Tags').clear();
-            common_metadata.find('Tags').append(ET.fromstring(new_tags));
-            #old_tags.text = new_tags;
-            #print(str(child))
+
+            old_tags.text = new_tags;
+            print(str(child))
             print(str(ET.tostring(child, 'utf-8', method='xml')));
             tree.write(resource_file);
+
           except:
-            print('exception raised');
-            common_metadata.find('Tags').append(old_tags);
+            print('exception raised')
             app.notfound();
             return;
-
 
 # Return metadata by name from metadata
 class get_resource_id_metadata_by_name:
   def GET(self, resource_id, metadata_name):
     web.header('Content-Type', 'text/xml');
     print('get_resource_id_metadata_by_name');
-    print("getting resourceID="+str(resource_id)+" metadata="+str(metadata_name)+'content_type='+str(http_content_type))
+    print "getting resourceID="+str(resource_id)+" metadata="+str(metadata_name)+'content_type='+str(http_content_type);
     for child in root:
       if child.attrib['resourceid'] == str(resource_id):
         resource = child;
@@ -114,7 +108,7 @@ class get_resource_id_metadata_by_name:
             xml_element =xml_element_specific;
           
           
-          print('output='+str(output))
+          print 'output='+str(output);
           
           if http_content_type != 'xml':
             output == xml_element.text;
@@ -139,7 +133,7 @@ class get_resource_id_metadata_by_name:
 class get_resource_id_specific_metadata_by_name:
   def GET(self, resource_id, metadata_name):
     print('get_resource_id_specific_metadata_by_name');
-    print("getting resourceID="+str(resource_id)+" metadata="+str(metadata_name)+'content_type='+str(http_content_type))
+    print "getting resourceID="+str(resource_id)+" metadata="+str(metadata_name)+'content_type='+str(http_content_type);
     for child in root:
       if child.attrib['resourceid'] == str(resource_id):
         resource = child;
@@ -167,7 +161,7 @@ class get_resource_id_specific_metadata_by_name:
         try:
           xml_element = resource_specific_metadata.find(metadata_name);
           output = ET.tostring(xml_element, 'utf-8', method='xml')
-          print('output='+str(output))
+          print 'output='+str(output);
 
           if http_content_type != 'xml':
             output == xml_element.text;
@@ -190,9 +184,8 @@ class get_resource_id_specific_metadata_by_name:
 # Return metadata by name from common metadata
 class get_resource_id_common_metadata_by_name:
   def GET(self, resource_id, metadata_name):
-    web.header('Content-Type', 'text/xml');
     print('get_resource_id_common_metadata_by_name');
-    print("getting resourceID="+str(resource_id)+" metadata="+str(metadata_name)+'content_type='+str(http_content_type))
+    print "getting resourceID="+str(resource_id)+" metadata="+str(metadata_name)+'content_type='+str(http_content_type);
     for child in root:
       if child.attrib['resourceid'] == str(resource_id):
         resource = child;
@@ -201,7 +194,7 @@ class get_resource_id_common_metadata_by_name:
 
         try:
           output = ET.tostring(xml_element, 'utf-8', method='xml')
-          print('output='+str(output))
+          print 'output='+str(output);
           if http_content_type != 'xml':
             output == xml_element.text;
  
@@ -220,9 +213,8 @@ class get_resource_id_common_metadata_by_name:
 # Return XML Element given resource_id and element name
 class get_element_by_name:
   def GET(self, resource_id, element_name):
-    web.header('Content-Type', 'text/xml');
     print('get_element_by_name');
-    print("get resource description "+str(resource_id))
+    print "get resource description "+str(resource_id)
     # ET.dump(tree)
     #output = ET.tostring(root, 'utf-8', method='xml')
     
@@ -245,7 +237,7 @@ class get_element_by_name:
 class get_description:
   def GET(self, resource_id):
     print('get_description');
-    print("get resource description "+str(resource_id))
+    print "get resource description "+str(resource_id)
     # ET.dump(tree)
     #output = ET.tostring(root, 'utf-8', method='xml')
 
@@ -267,17 +259,14 @@ class get_description:
 # Return the XML for the resource with resource_id
 class get_resource_xml:
   def GET(self, resource_id):
-    web.header('Content-Type', 'text/xml')
     print('get_resource_xml');
-    print("get resource "+str(resource_id))
+    print "get resource "+str(resource_id)
     # ET.dump(tree)
     #output = ET.tostring(root, 'utf-8', method='xml')
     #return output
     for child in root:
       if child.attrib['resourceid'] == str(resource_id):
         output = ET.tostring(child, 'utf-8', method='xml')
-        web.header('Content-Type', 'text/xml')
-        #return render.response(output);
         return output
   
     app.notfound();
@@ -320,7 +309,7 @@ class get_model_list:
         models_root = tree.find('Resource')
         output = 'models:[';
         for child in models_root:
-            print('child', child.tag, child.attrib)
+            print 'child', child.tag, child.attrib
             output += str(child.attrib) + str(child.text) +','
         output += ']';
         
@@ -334,7 +323,7 @@ class list_users:
     def GET(self):
         output = 'users:[';
         for child in root:
-            print('child', child.tag, child.attrib)
+            print 'child', child.tag, child.attrib
             output += str(child.attrib) + ','
         output += ']';
         return output
