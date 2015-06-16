@@ -1,0 +1,401 @@
+143.167.49.142:57998 - - [10/Feb/2014 17:40:11] "HTTP/1.1 GET /chic/resource/2" - 200 OK
+143.167.49.142:58002 - - [10/Feb/2014 17:40:30] "HTTP/1.1 GET /chic/resource/1" - 200 OK
+http://0.0.0.0:8099/
+get_resource_xml
+get resource 2
+get_resource_xml
+get resource 1
+add_resource_id_tags, resource_id=2
+<aap>paperino</aap>
+<Resource mandatory="true" resourceid="2" type="tag">
+      <SchemaURI mandatory="true" multiplicity="1" type="uri">
+      </SchemaURI>
+      
+      <SchemaVersion mandatory="true" multiplicity="1" type="date">
+      </SchemaVersion>
+      
+      <CommonMetadata mandatory="true" multiplicity="1" type="tag">
+        
+        <GlobalID mandatory="true" multiplicity="1" type="URI">
+          http://cse.insigneo.org:8090/chic/resource/2
+        </GlobalID>
+        
+        <LocalID mandatory="true" multiplicity="1" type="string">
+          2
+        </LocalID>
+        
+        <Name mandatory="true" multiplicity="1" type="string">
+          WNT_Bcatenin_model
+        </Name>
+        
+        <Type mandatory="true" multiplicity="1" type="list">
+          Dataset
+        </Type>
+        
+        <Description mandatory="true" multiplicity="1" type="string">
+          Dataset required as input to execute the Matlab based implementation of the ODE model
+          http://www.ncbi.nlm.nih.gov/pubmed/17382967
+        </Description>
+        
+        <Tags><aap>paperino</aap></Tags><Author mandatory="true" multiplicity="1" type="string">
+          D C Walker
+        </Author>
+        
+        <Publicity mandatory="true" multiplicity="1" type="bool">
+          public
+        </Publicity>
+        
+        <SemanticRepresentation mandatory="true" multiplicity="n" type="tag">
+          <OntologyURI mandatory="false" multiplicity="n" type="URI">
+          </OntologyURI>
+          
+          <SemanticConcepts mandatory="false" multiplicity="n" type="tag">
+          </SemanticConcepts>
+        </SemanticRepresentation>
+        
+        <Quality mandatory="true" multiplicity="1" type="tag">
+          <Rating mandatory="false" multiplicity="1" type="float">
+          </Rating>
+          
+          <Views mandatory="false" multiplicity="1" type="int">
+          </Views>
+        </Quality>
+        
+        <Documentation mandatory="true" multiplicity="1" type="tag">
+          
+          <LicenseType mandatory="true" multiplicity="1" type="list">
+            EDU
+          </LicenseType>
+          
+          <LicenceURL mandatory="true" multiplicity="1" type="URI">
+            http://cse.insigneo.org:8081/license/EDU
+          </LicenceURL>
+          
+          <References mandatory="true" multiplicity="1" type="string">
+            http://www.ncbi.nlm.nih.gov/pubmed/17382967
+          </References>
+        </Documentation>
+        
+        <Traceability mandatory="true" multiplicity="1" type="tag">
+          
+          <Event mandatory="true" multiplicity="1" type="list">
+            create
+          </Event>
+          
+          <EventDate mandatory="true" multiplicity="1" type="date">
+            28-Jan-2014
+          </EventDate>
+          
+          <OperatorID mandatory="true" multiplicity="1" type="string">
+            D C Walker
+          </OperatorID>
+          
+          <Parameters mandatory="false" multiplicity="n" type="string">
+          </Parameters>
+        </Traceability>
+        
+      </CommonMetadata>
+      
+      <SpecificMetadata mandatory="true" multiplicity="1" type="tag">
+        
+        
+        <Dataset mandatory="true" multiplicity="1" type="tag">
+          
+          <StorageURI mandatory="true" multiplicity="1" type="URI">
+            http://cse.insigneo.org:8090/chic/data/walker-byrne-000000001
+          </StorageURI>
+          
+          <FileSize mandatory="true" multiplicity="1" type="int">
+            100KB
+          </FileSize>
+          
+          <FileCheckSum mandatory="true" multiplicity="1" type="string">
+            FAKE_Checksum1234567890
+          </FileCheckSum>
+          
+          <FileFormat mandatory="true" multiplicity="1" type="list">
+            CSV
+          </FileFormat>
+          
+          <FileType mandatory="true" multiplicity="1" type="bool">
+            ascii
+          </FileType>
+          
+          <Endianity mandatory="true" multiplicity="1" typ143.167.49.142:58031 - - [10/Feb/2014 17:41:04] "HTTP/1.1 PUT /chic/resource/2/Tags" - 200 OK
+143.167.49.142:58032 - - [10/Feb/2014 17:41:08] "HTTP/1.1 GET /chic/resource/1" - 200 OK
+143.167.49.142:58032 - - [10/Feb/2014 17:41:10] "HTTP/1.1 GET /chic/resource/1" - 200 OK
+143.167.49.142:58032 - - [10/Feb/2014 17:41:12] "HTTP/1.1 GET /chic/resource/1" - 200 OK
+143.167.49.142:58036 - - [10/Feb/2014 17:41:23] "HTTP/1.1 GET /chic/resource/2" - 200 OK
+143.167.49.142:58039 - - [10/Feb/2014 17:41:33] "HTTP/1.1 PUT /chic/resource/2/Tags" - 404 Not Found
+143.167.49.142:58040 - - [10/Feb/2014 17:41:44] "HTTP/1.1 PUT /chic/resource/2/Tags" - 404 Not Found
+e="bool">
+            big
+          </Endianity>
+          
+          <Encryption mandatory="true" multiplicity="1" type="bool">
+            no
+          </Encryption>
+        </Dataset>
+        
+        
+      </SpecificMetadata>
+      
+    </Resource>
+
+
+get_resource_xml
+get resource 1
+get_resource_xml
+get resource 1
+get_resource_xml
+get resource 1
+get_resource_xml
+get resource 2
+add_resource_id_tags, resource_id=2
+<aap>paperinaap>
+exception raised
+add_resource_id_tags, resource_id=2
+<aap>paperin<aap>
+exception raised
+add_resource_id_tags, resource_id=2
+<aap>paperino</aap>
+<Resource mandatory="true" resourceid="2" type="tag">
+      <SchemaURI mandatory="true" multiplicity="1" type="uri">
+      </SchemaURI>
+      
+      <SchemaVersion mandatory="true" multiplicity="1" type="date">
+      </SchemaVersion>
+      
+      <CommonMetadata mandatory="true" multiplicity="1" type="tag">
+        
+        <GlobalID mandatory="true" multiplicity="1" type="URI">
+          http://cse.insigneo.org:8090/chic/resource/2
+        </GlobalID>
+        
+        <LocalID mandatory="true" multiplicity="1" type="string">
+          2
+        </LocalID>
+        
+        <Name mandatory="true" multiplicity="1" type="string">
+          WNT_Bcatenin_model
+        </Name>
+        
+        <Type mandatory="true" multiplicity="1" type="list">
+          Dataset
+        </Type>
+        
+        <Description mandatory="true" multiplicity="1" type="string">
+          Dataset required as input to execute the Matlab based implementation of the ODE model
+          http://www.ncbi.nlm.nih.gov/pubmed/17382967
+        </Description>
+        
+        <Tags><aap>paperino</aap></Tags><Author mandatory="true" multiplicity="1" type="string">
+          D C Walker
+        </Author>
+        
+        <Publicity mandatory="true" multiplicity="1" type="bool">
+          public
+        </Publicity>
+        
+        <SemanticRepresentation mandatory="true" multiplicity="n" type="tag">
+          <OntologyURI mandatory="false" multiplicity="n" type="URI">
+          </OntologyURI>
+          
+          <SemanticConcepts mandatory="false" multiplicity="n" type="tag">
+          </SemanticConcepts>
+        </SemanticRepresentation>
+        
+        <Quality mandatory="true" multiplicity="1" type="tag">
+          <Rating mandatory="false" multiplicity="1" type="float">
+          </Rating>
+          
+          <Views mandatory="false" multiplicity="1" type="int">
+          </Views>
+        </Quality>
+        
+        <Documentation mandatory="true" multiplicity="1" type="tag">
+          
+          <LicenseType mandatory="true" multiplicity="1" type="list">
+            EDU
+          </LicenseType>
+          
+          <LicenceURL mandatory="true" multiplicity="1" type="URI">
+            http://cse.insigneo.org:8081/license/EDU
+          </LicenceURL>
+          
+          <References mandatory="true" multiplicity="1" type="string">
+            http://www.ncbi.nlm.nih.gov/pubmed/17382967
+          </References>
+        </Documentation>
+        
+        <Traceability mandatory="true" multiplicity="1" type="tag">
+          
+          <Event mandatory="true" multiplicity="1" type="list">
+            create
+          </Event>
+          
+          <EventDate mandatory="true" multiplicity="1" type="date">
+            28-Jan-2014
+          </EventDate>
+          
+          <OperatorID mandatory="true" multiplicity="1" type="string">
+            D C Walker
+          </OperatorID>
+          
+          <Parameters mandatory="false" multiplicity="n" type="string">
+          </Parameters>
+        </Traceability>
+        
+      </CommonMetadata>
+      
+      <SpecificMetadata mandatory="true" multiplicity="1" type="tag">
+        
+        
+        <Dataset mandatory="true" multiplicity="1" type="tag">
+          
+          <StorageURI mandatory="true" multiplicity="1" type="URI">
+            http://cse.insigneo.org:8090/chic/data/walker-byrne-000000001
+          </StorageURI>
+          
+          <FileSize mandatory="true" multiplicity="1" type="int">
+            100KB
+          </FileSize>
+          
+  143.167.49.142:58041 - - [10/Feb/2014 17:42:04] "HTTP/1.1 PUT /chic/resource/2/Tags" - 200 OK
+143.167.49.142:58042 - - [10/Feb/2014 17:42:07] "HTTP/1.1 GET /chic/resource/2" - 200 OK
+143.167.49.142:58042 - - [10/Feb/2014 17:42:09] "HTTP/1.1 GET /chic/resource/2" - 200 OK
+143.167.49.142:58042 - - [10/Feb/2014 17:42:10] "HTTP/1.1 GET /chic/resource/2" - 200 OK
+143.167.49.142:58042 - - [10/Feb/2014 17:42:20] "HTTP/1.1 GET /chic/resource/2" - 200 OK
+        <FileCheckSum mandatory="true" multiplicity="1" type="string">
+            FAKE_Checksum1234567890
+          </FileCheckSum>
+          
+          <FileFormat mandatory="true" multiplicity="1" type="list">
+            CSV
+          </FileFormat>
+          
+          <FileType mandatory="true" multiplicity="1" type="bool">
+            ascii
+          </FileType>
+          
+          <Endianity mandatory="true" multiplicity="1" type="bool">
+            big
+          </Endianity>
+          
+          <Encryption mandatory="true" multiplicity="1" type="bool">
+            no
+          </Encryption>
+        </Dataset>
+        
+        
+      </SpecificMetadata>
+      
+    </Resource>
+
+
+get_resource_xml
+get resource 2
+get_resource_xml
+get resource 2
+get_resource_xml
+get resource 2
+get_resource_xml
+get resource 2
+add_resource_id_tags, resource_id=2
+<aap>pluto</aap>
+<Resource mandatory="true" resourceid="2" type="tag">
+      <SchemaURI mandatory="true" multiplicity="1" type="uri">
+      </SchemaURI>
+      
+      <SchemaVersion mandatory="true" multiplicity="1" type="date">
+      </SchemaVersion>
+      
+      <CommonMetadata mandatory="true" multiplicity="1" type="tag">
+        
+        <GlobalID mandatory="true" multiplicity="1" type="URI">
+          http://cse.insigneo.org:8090/chic/resource/2
+        </GlobalID>
+        
+        <LocalID mandatory="true" multiplicity="1" type="string">
+          2
+        </LocalID>
+        
+        <Name mandatory="true" multiplicity="1" type="string">
+          WNT_Bcatenin_model
+        </Name>
+        
+        <Type mandatory="true" multiplicity="1" type="list">
+          Dataset
+        </Type>
+        
+        <Description mandatory="true" multiplicity="1" type="string">
+          Dataset required as input to execute the Matlab based implementation of the ODE model
+          http://www.ncbi.nlm.nih.gov/pubmed/17382967
+        </Description>
+        
+        <Tags><aap>pluto</aap></Tags><Author mandatory="true" multiplicity="1" type="string">
+          D C Walker
+        </Author>
+        
+        <Publicity mandatory="true" multiplicity="1" type="bool">
+          public
+        </Publicity>
+        
+        <SemanticRepresentation mandatory="true" multiplicity="n" type="tag">
+          <OntologyURI mandatory="false" multiplicity="n" type="URI">
+          </OntologyURI>
+          
+          <SemanticConcepts mandatory="false" multiplicity="n" type="tag">
+          </SemanticConcepts>
+        </SemanticRepresentation>
+        
+        <Quality mandatory="true" multiplicity="1" type="tag">
+          <Rating mandatory="false" multiplicity="1" type="float">
+          </Rating>
+          
+          <Views mandatory="false" multiplicity="1" type="int">
+          </Views>
+        </Quality>
+        
+        <Documentation mandatory="true" multiplicity="1" type="tag">
+          
+          <LicenseType mandatory="true" multiplicity="1" type="list">
+            EDU
+          </LicenseType>
+          
+          <LicenceURL mandatory="true" multiplicity="1" type="URI">
+            http://cse.insigneo.org:8081/license/EDU
+          </LicenceURL>
+          
+          <References mandatory="true" multiplicity="1" type="string">
+            http://www.ncbi.nlm.nih.gov/pubmed/17382967
+          </References>
+        </Documentation>
+        
+        <Traceability mandatory="true" multiplicity="1" type="tag">
+          
+          <Event mandatory="true" multiplicity="1" type="list">
+            create
+          </Event>
+          
+          <EventDate mandatory="true" multiplicity="1" type="date">
+            28-Jan-2014
+          </EventDate>
+          
+          <OperatorID mandatory="true" multiplicity="1" type="string">
+            D C Walker
+          </OperatorID>
+          
+          <Parameters mandatory="false" multiplicity="n" type="string">
+          </Parameters>
+        </Traceability>
+        
+      </CommonMetadata>
+      
+      <SpecificMetadata mandatory="true" multiplicity="1" type="tag">
+        
+        
+        <Dataset mandatory="true" multiplicity="1" type="tag">
+          
+   143.167.49.142:58046 - - [10/Feb/2014 17:42:28] "HTTP/1.1 PUT /chic/resource/2/Tags" - 200 OK
+143.167.49.142:58047 - - [10/Feb/2014 17:42:30] "HTTP/1.1 GET /chic/resource/2" - 200 OK
