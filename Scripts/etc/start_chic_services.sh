@@ -16,4 +16,4 @@ cd -
 # initializing python environment
 source $VPHHOME/py3/bin/activate
 
-python3 $CHICSERVICES/repositories/repository/manage.py runserver cse.shef.ac.uk:8010 2>&1 | tee $VPHHOME/log/model_and_datarepo_8010 &
+python3 $CHICSERVICES/repositories/repository/manage.py runserver localhost:8010 2>&1 | tee $VPHHOME/log/model_and_datarepo_8010 &
