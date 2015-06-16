@@ -8,7 +8,7 @@ CHICSERVICES=$VPHHOME/CHIC-services
 source $VPHHOME/py2/bin/activate
 
 echo "Launch CHIC annotation web services"
-python2 $CHICSERVICES/annotations/nnotations_service/rest_chic_annotation_8090.py 8090 2>&1 | tee $VPHHOME/log/annotation_8090  &
+python2 $CHICSERVICES/annotations/annotation_service/rest_chic_annotation_8090.py 8090 2>&1 | tee $VPHHOME/log/annotation_8090  &
 python2 $CHICSERVICES/annotations/annotation_service/rest_chic_annotation_8091.py 8091 2>&1 | tee $VPHHOME/log/annotation_8091  &
 cd -
 
