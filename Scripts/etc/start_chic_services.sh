@@ -15,6 +15,5 @@ cd -
 
 # initializing python environment
 source $VPHHOME/py3/bin/activate
-python3 $CHICSERVICES/repositories/repository/manage.py makemigrations model_repository
 python3 $CHICSERVICES/repositories/repository/manage.py migrate
 python3 $CHICSERVICES/repositories/repository/manage.py runserver 0.0.0.0:8010 2>&1 | tee $VPHHOME/log/model_and_datarepo_8010 &
